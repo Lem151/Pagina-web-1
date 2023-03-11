@@ -1,0 +1,333 @@
+/*Este import de aqui mete una fuente usada en los titulos*/
+@import url('https://fonts.cdnfonts.com/css/minecrafter-alt');
+/*Esta serie de conteiners se encargan de que la pagina sea responsive*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+.containers {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+@media screen and (max-width: 768px) {/*Esta media de aqui se necarga de que entre oreas cosas se mentenga los paramentros originales en paginas pequeñas*/
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    }
+    a {
+        color: yellow;
+    }
+    @media (max-width: 767px) {/*Este media de aqui disminuye el tamaño de los titulos cuadno la pantalla es demasiado pequeña*/
+        .inftit {
+            font-family: 'Minecrafter Alt', sans-serif;
+            color: lightblue;
+            font-size: 1em;
+        }
+        .midftit {
+            font-family: 'Minecrafter Alt', sans-serif;
+            color: rgb(7, 7, 126);
+            font-size: 1em;
+        }
+        .Rftit {
+            font-family: 'Minecrafter Alt', sans-serif;
+            color: rgb(166, 235, 6);
+            font-size: 1em;
+        }
+        a {font-size: 0.7em;}
+        li {font-size: 0.8em;}
+      }
+   
+div.up{ /*Este div es la parte de arriba de la pagina */
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-image: url('imgs/fondop1.jpg');
+    background-position: bottom center;
+    border: 0.1em solid plum;
+    border-bottom: 0em;
+    display: flex;
+    text-align: center;
+ 
+}
+div.down{ /*es pa arte de abajo*/
+    width: 100%;
+    height: 60%;  
+    border: 0.1em solid plum;
+   
+}
+p {
+    color: gold;
+}
+
+
+h1.prin { /*es el texto que pone elm*/
+    position: relative;
+    z-index: 2;
+    line-height: 1.2em;
+    font-size: 450%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: plum;
+    position: relative;
+    top: 0%;
+    left: -3%;
+    -webkit-text-stroke: 2px purple;
+  }
+h2.sec{ /*pone ramis*/
+    position: relative;
+    z-index: 2;
+    line-height: 6.5em;
+    font-size: 350%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    -webkit-text-stroke: 1px plum;
+}
+
+
+.info { /*les da formato a los div que se encuentran abajo*/
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 33%;
+    height: 85%;
+    border: 0.1em solid black;
+}
+.info:hover {
+    background-image: url(imgs/fondol.jpg);
+    background-position: 0% 33.3%;
+    -webkit-transition: background 0.4s ease-in;
+    -moz-transition: background 0.4s ease-in;
+    -ms-transition: background 0.4s ease-in;
+    -o-transition: background 0.4s ease-in;
+    transition: background 0.4s ease-in;
+}
+
+
+.inmid {
+    position: relative;
+    top: -85.3%;
+    left: 33.3%;
+    width: 33%;
+    height: 85%;
+    border: 0.1em solid black;
+}
+.inmid:hover {
+    background-image: url(imgs/fondol.jpg);
+    background-position: 43.3% 33.3%;
+    -webkit-transition: background 0.4s ease-in;
+    -moz-transition: background 0.4s ease-in;
+    -ms-transition: background 0.4s ease-in;
+    -o-transition: background 0.4s ease-in;
+    transition: background 0.4s ease-in;
+}
+.inR {
+    position: relative;
+    top: -170.5%;
+    left: 66.55%;
+    width: 33%;
+    height: 85%;
+    border: 0.1em solid black;
+}
+.inR:hover {
+    background-image: url(imgs/fondol.jpg);
+    background-position: 50% 95.3%;
+    -webkit-transition: background 0.4s ease-in;
+    -moz-transition: background 0.4s ease-in;
+    -ms-transition: background 0.4s ease-in;
+    -o-transition: background 0.4s ease-in;
+    transition: background 0.4s ease-in;
+}
+
+ul{
+    color: yellow;
+    list-style-type: circle;
+}
+/*Les da formato a los titulos y textos de la parte de abajo*/
+.prinftit{
+    font-family: 'Minecrafter Alt', sans-serif;
+    color: lightblue;
+    font-size: 3em;
+}
+.inftit {
+    font-family: 'Minecrafter Alt', sans-serif;
+    color: lightblue;
+
+
+}
+.midftit {
+    font-family: 'Minecrafter Alt', sans-serif;
+    color: rgb(7, 7, 126);
+}
+.Rftit {
+    font-family: 'Minecrafter Alt', sans-serif;
+    color: rgb(166, 235, 6);
+}
+.imng {
+    font-family: 'Minecrafter Alt', sans-serif;
+    color: purple;
+}
+.intex {
+    position: relative;
+    top: 0%;
+    left: 4%;
+}
+
+
+
+/*son las animaciones usadas en la pagina*/
+@keyframes slidein{
+    from {
+    margin-bottom: 100%;
+    width: 300%;
+    }
+
+
+
+
+    to {
+    margin-bottom: 0%;
+    width: 100%;
+    }
+}
+a.sub{
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+
+
+/*Crea el menu horizontal fijo de la pagina*/
+
+header {
+    position: relative; /*ajusta la opsicion y colores*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul ul { /*se encarga del formato de los submenues*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+  }
+  
+  nav ul ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  nav ul ul a {
+    padding: 10px 20px;
+  }
+  
+  nav ul li:hover > ul { /*se encarga de hacer de color mas oscuro el menu que estas mirando*/
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  nav ul ul a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  nav li.current-menu-item > a {
+    background-color: #f5f5f5;
+  }
+  
+  /*hace que aparezcan los submenus al colocar el cursor entre oreas cosas*/
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul ul li {
+    width: 200px;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul ul li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  @keyframes slidein{
+    from {
+    margin-bottom: -50%;
+    width: 100%;
+    }
+
+
+    to {
+    margin-bottom: 0%;
+    width: 100%;
+    }
+}
+.ani{
+    animation-name: slidein;
+    animation-duration: 0.3s;
+}

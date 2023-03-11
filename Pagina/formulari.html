@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head><!--Otro head mas lo explico en principal-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header><!--Enserio deberias enpezar por principal si no entiendes esto-->
+      <nav>
+        <ul>
+          <li><a href="Principal.html">Inicio</a></li>
+          <li><a href="https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial">Acerca de</a></li>
+          <li>
+            <a href="#">Trabajos realizados</a>
+            <ul>
+              <li class="ani"><a href="lateral.html">Menu lateral desplegable</a></li>
+              <li class="ani"><a href="formulari.html">Formulari</a></li>
+              <li class="ani"><a href="imagenes.html">Galeria</a></li>
+            </ul>
+          </li>
+          <li><a href="https://chat.openai.com/chat">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article class="animate"><!--Este es el formulario algo basico-->
+      <form method="post"><!--Me gusta el reciclage-->
+        <div class="form-group">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name" placeholder="Introdueix el teu nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contrasenya:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Edat:</label>
+          <input type="number" id="age" name="age" min="18" max="120" required>
+        </div>
+        <div class="form-group">
+          <label for="fecha">Aniversari:</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div>
+          <input type="checkbox" name="chaquecosa">
+          <label for="chaque">Aceptas las condiciones?</label>
+        </div>
+        <div class="form-group">
+          <input class="res" type="reset" value="Esborrar">
+          <input class="sub" type="submit" value="Enviar">
+        </div>
+      </form>
+    </article>
+  </body>
+</html>
+
+

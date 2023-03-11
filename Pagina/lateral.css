@@ -1,0 +1,109 @@
+
+/*De nuevo container se encarga de que sea responsive*/
+.container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    left: -3%;
+    margin-top: 2%;
+  }
+  
+  .sidebar {/*Es el formato de la barra lateral*/
+    width: 200px;
+    height: 100%;
+    background-color: rgb(177, 0, 147);
+    position: fixed;
+    top: 0;
+    left: -70%;
+    transition: left 0.5s;
+    z-index: 1; /* Agregamos z-index para que el menú aparezca sobre el contenido */
+  }
+  
+  .sidebar ul {/*las partes de esta lista*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {/*Lo mismo*/
+    margin: 10px 0;
+  }
+  
+  .content {/*por si quisiera poner algo extra al lado de la lista*/
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .toggle-button {/*El boton que activa la lista*/
+    display: block;
+    font-size: 2rem;
+    margin: 10%;
+    cursor: pointer;
+    z-index: 2; /* El-index para que el botón aparezca sobre el menú */
+    position: relative;
+  }
+  
+  .toggle-button:hover {
+    color: #555;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  #toggle:checked ~ .toggle-button{ /*Lo mismo que arriba pero cuando esta activado*/
+    
+    display: block;
+    font-size: 2rem;
+    margin: 7%;
+    cursor: pointer;
+    z-index: 2; /* El-index para que el botón aparezca sobre el menú */
+    position: relative; 
+  }
+
+  #toggle:checked ~ .sidebar {/*Esto es cuando esta activada la barra*/
+    left: 0;
+    margin-top: 5%;
+  }
+  
+  #toggle:not(:checked) ~ .content {
+    margin-left: 0;
+  }
+  
+  #toggle:checked ~ .content {
+    margin-left: 15%;
+  
+  }
+  @media (max-width: 767px) {/*Unas modificaciones para que funcione mejor en pantallas pequeñas*/
+    #toggle:checked ~ .sidebar {
+        left: 0;
+        margin-top: 20%;
+      }
+}
+@media (max-width: 767px) {
+    .toggle-button {
+        display: block;
+        font-size: 2rem;
+        margin: 20%;
+        cursor: pointer;
+        z-index: 2; /* A este punto ya sabes lo que hace */
+        position: relative; 
+      }
+      #toggle:checked ~ .toggle-button{
+    
+        display: block;
+        font-size: 2rem;
+        margin: 17%;
+        cursor: pointer;
+        z-index: 2; /* ... */
+        position: relative; 
+      }
+    
+}
+input[type="checkbox"] {/*Para que no se vea el check box y solo es boton*/
+
+    opacity: 0;
+
+  }
+  

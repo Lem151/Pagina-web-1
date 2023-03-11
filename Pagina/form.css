@@ -1,0 +1,60 @@
+form{/*No hay gran cosa solo que se vea bonito*/
+    margin-top: 10%;
+    border: 2px solid plum;
+    width: 40%;
+    margin-left: 30%;
+    padding: 1rem;
+    background-color: purple;
+    border-radius: 1rem;
+    animation: form-anim 1s ease-out;
+}
+
+form:hover{
+    border-color: plum;
+}
+
+@keyframes form-anim {/*Y una sutil animacion cuando entras en la pagina*/
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+div{
+    padding: auto;
+    color: gold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+input {
+    padding: 0.5rem;
+    border: 3px solid plum;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+
+input:focus {
+    border-color: #ffffff;
+}
+
+
+input:hover {
+    border: 3px solid ;
+    border-color: gold;
+}
+
+
+input[restricted] {
+    background-color: gold;
+}
